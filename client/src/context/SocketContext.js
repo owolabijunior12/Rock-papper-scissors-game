@@ -13,8 +13,7 @@ const SocketContextProvider = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-// // "undefined" means the URL will be computed from the `window.location` object
-const URL = process.env.NODE_ENV === 'production' ? undefined : "https://iboytech-game-rps.onrender.com/";
+    const URL = process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:8080' || "https://iboytech-game-rps.onrender.com";
 
     const socket = io(URL);
     setSocket(socket);

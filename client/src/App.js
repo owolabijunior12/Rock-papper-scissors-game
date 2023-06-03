@@ -8,6 +8,7 @@ import "./App.css";
 const App = () => {
   return (
     <main className="main">
+      audio
       <img
         src={background_img}
         className="background_img"

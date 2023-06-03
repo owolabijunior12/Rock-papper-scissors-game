@@ -17,10 +17,11 @@
 }
 
 .container {
-	width: 1000px;
-	height: 550px;
+	width: 900px;
+	height: 440px;
 	background-color: var(--light-purple);
 	border-radius: 30px;
+	/* background: orange; */
 	box-shadow: var(--box-shadow);
 	z-index: 2;
 	display: flex;

@@ -23,7 +23,8 @@ const Home = () => {
         />
         <div className={styles.btn_container}>
           <Button name="play with friend" type="friend" />
-          <Button name="Play with stranger" type="stranger" />                
+          <Button name="Play with stranger" type="stranger" />
+          <Button name="Play gain" type="stranger" />          
         </div>
       </div>
     </>
