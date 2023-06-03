@@ -27,10 +27,12 @@ const PlayerOne = ({ result }) => {
 
   return (
     <div className={styles.container}>
+      
       <div className={styles.player_info}>
         <div className={styles.person}>
-          <PersonIcon />
+          <img src="" alt="" />
         </div>
+        
         <div className={styles.star_container}>
           {[...Array(3).keys()].map((ele, index) =>
             index + 1 <= score ? (
@@ -42,7 +44,10 @@ const PlayerOne = ({ result }) => {
               <StarIcon key={index} className={styles.star} />
             )
           )}
+          
+         
         </div>
+        <p className={styles.score}>{score}</p>
       </div>
       {option === "rock" && (
         <img

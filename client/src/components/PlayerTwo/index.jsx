@@ -28,7 +28,7 @@ const PlayerTwo = ({ result }) => {
   }, [result]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container}>      
       {!player_2 && room.type === "friend" && (
         <JoinLink
           link={`${process.env.REACT_APP_BASE_URL}room/${room.roomId}`}
@@ -46,6 +46,7 @@ const PlayerTwo = ({ result }) => {
       )}
       {player_2 && (
         <div className={styles.player_info}>
+          <p className={styles.score}>{score}</p>
           <div className={styles.star_container}>
             {[...Array(3).keys()].map((ele, index) =>
               index + 1 <= score ? (
@@ -58,6 +59,7 @@ const PlayerTwo = ({ result }) => {
               )
             )}
           </div>
+          {/* <p className={styles.score}>{score}</p> */}
           <div className={styles.person}>
             <PersonIcon />
           </div>

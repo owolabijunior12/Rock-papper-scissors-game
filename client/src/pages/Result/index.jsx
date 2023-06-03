@@ -16,11 +16,21 @@ const Result = () => {
 
   useEffect(() => {
     let score = room.players[player_1].score;
-
-    if (score === 3) setBoardImg(win_board_img);
-    else if (score === 2) setBoardImg(lose_board_2_img);
-    else if (score === 1) setBoardImg(lose_board_1_img);
-    else setBoardImg(lose_board_3_img);
+    let message ="Well Played !!!"
+    if (score === 3) {
+      setBoardImg(win_board_img)
+      return message
+    }else if (score === 2) {
+      setBoardImg(lose_board_2_img)
+      return message ="You nearly won!!"
+    }
+    else if (score === 1) {
+      setBoardImg(lose_board_1_img)
+      return message ="Try Again!!"
+    }else {
+      setBoardImg(lose_board_3_img)
+      return message ="You lost but you can still do it!!"
+    }
   }, []);
 
   return (

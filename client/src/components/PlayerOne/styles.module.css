@@ -28,6 +28,9 @@
   display: flex;
   align-items: center;
   position: absolute;
+  /* background-color: aqua; */
+  width: 45%;
+  justify-content: space-between;
   top: 20px;
   left: 20px;
 }
@@ -51,15 +54,21 @@
 
 .star_container {
   margin-left: 20px;
+  display: flex;
 }
 
 .star {
   color: white;
-  width: 50px !important;
-  height: 50px !important;
-  margin: 0 4px;
+  width: 40px !important;
+  height: 30px !important;
+  
+
 }
 
+.score{
+  color: white;
+ font-size: 16px;;
+}
 .active_star {
   color: var(--yellow) !important;
 }
