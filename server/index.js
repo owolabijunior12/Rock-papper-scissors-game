@@ -9,7 +9,7 @@ const app = express();
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-  cors: { origin: "http://localhost:3001"|| "https://iboytech-game-rps.vercel.app/" },
+  cors: { origin:  "https://iboytech-game-rps.vercel.app/" },
 });
 
 const rooms = [];
