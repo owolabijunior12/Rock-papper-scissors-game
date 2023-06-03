@@ -2,13 +2,13 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Room from "./pages/Room";
 import Result from "./pages/Result";
+import music from './images/music.mp3'
 import background_img from "./images/background.png";
 import "./App.css";
 
 const App = () => {
   return (
     <main className="main">
-      audio
       <img
         src={background_img}
         className="background_img"
@@ -21,6 +21,7 @@ const App = () => {
           <Route path="/result" element={<Result />} />
         </Routes>
       </div>
+      <audio src={music}  autoPlay/>
     </main>
   );
 };

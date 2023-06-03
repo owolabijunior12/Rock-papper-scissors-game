@@ -13,7 +13,7 @@ const SocketContextProvider = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    const socket = io('http://localhost:8080' || 'https://iboytech-game-rps.onrender.com');
+    const socket = io(  'https://iboytech-game-rps.onrender.com'  || 'http://localhost:8080');
     setSocket(socket);
 
     socket.on("room:get", (payload) => {
