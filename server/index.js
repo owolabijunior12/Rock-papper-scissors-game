@@ -7,6 +7,9 @@ const roomHandler = require("./roomHandler");
 dotenv.config();
 const app = express();
 
+app.get("/", (req, res)=>{
+    return res.json("hello iboytech to the world");
+})
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: { origin: "http://localhost:3000" ||  "https://iboytech-game-rps.vercel.app"},
