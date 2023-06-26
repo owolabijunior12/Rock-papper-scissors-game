@@ -30,8 +30,8 @@ const SocketContextProvider = ({ children }) => {
       }
 
       if (
-        payload?.players[play_1]?.score === 3 ||
-        payload?.players[play_2]?.score === 3
+        payload?.players[play_1]?.score === 10||
+        payload?.players[play_2]?.score === 10
       ) {
         let pathname = "/result";
         if (pathname !== location.pathname) navigate(pathname);
